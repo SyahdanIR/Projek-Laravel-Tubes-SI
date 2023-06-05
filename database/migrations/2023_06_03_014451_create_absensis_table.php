@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('absensi', function (Blueprint $table) {
-            $table->id('id_absensi');
+            $table->id();
             $table->time('jam_masuk');
             $table->time('jam_istirahat');
             $table->date('tanggal_kerja');
